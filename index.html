@@ -1,0 +1,252 @@
+<!-- material baseado no conteudo da nodeStudio, https://www.nodestudio.com.br/ -->
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+    <!-- sinais graficos  -->
+    <meta charset="utf-8">
+    <!-- descrições -->
+    <meta name="description" content="Projeto com fins academicos desenvolvido por Felipe Vidal Mendes, baseado no material disponivel e Livre de Rodrigo Oliveira, produtor da nodeStudio">
+    <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+    <meta name="author" content="Felipe Vidal Mendes">
+    <!-- tela e responsividade -->
+    <meta name="viewport" content="width=device-width, initial-scale=0">
+    <title>Materialize</title>
+    <!-- fontes do google -->
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- link materialize cdn, tirado do proprio site https://materializecss.com/getting-started.html, sempre antes do custom, que vai as configurações adicionais(alterações) ao codigo do cdn ou minificado-->
+      <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- css custom -->
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <!-- toda a estrutura do site foi tirada da documentação, modelos de slids, navs etc -->
+    <!-- inicio header -->
+    <header>
+          <!--  tirado da parte da documentação do materialize coponents/navbar -->
+          <!-- tags de comando do proprio frame, cor e posicionamento -->
+         <div class="navbar-fixed">
+           <!-- na documentação na parte de css/ cor você consegue ver as cores nativas e alterar direto na tag -->
+            <nav class="grey darken-2">
+              <!-- centralizando -->
+              <div class="container">
+                <div class="nav-wrapper">
+                  <a href="#!" class="brand-logo">Logo</a>
+                  <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                  <ul class="right hide-on-med-and-down">
+                    <li><a href="#">Sass</a></li>
+                    <li><a href="#">Components</a></li>
+                    <li><a href="#">Javascript</a></li>
+                    <li><a href="#">Mobile</a></li>
+                  </ul>
+                </div>
+              </div>
+              </nav>
+          </div>
+          
+            <ul class="sidenav" id="mobile-demo">
+              <li><a href="sass.html">Sass</a></li>
+              <li><a href="badges.html">Components</a></li>
+              <li><a href="collapsible.html">Javascript</a></li>
+              <li><a href="mobile.html">Mobile</a></li>
+            </ul>
+    </header>
+    <!-- fim header -->
+    <!-- inicio slider -->
+    <!-- literalmente copiado e colado da documentação, js/media -->
+    <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="https://www.google.com/url?sa=i&source=images&cd=&ved=2ahUKEwiixpGTj8PmAhWSFLkGHeeaBa0QjRx6BAgBEAQ&url=https%3A%2F%2Fpxhere.com%2Fpt%2Fphoto%2F1563175&psig=AOvVaw3_7gkVSYUJ0AvWA3mFLN1v&ust=1576893213001792"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj26tucj8PmAhWEIrkGHZ4LB0kQjRx6BAgBEAQ&url=https%3A%2F%2Fpxhere.com%2Fpt%2Fphoto%2F1452917&psig=AOvVaw3_7gkVSYUJ0AvWA3mFLN1v&ust=1576893213001792"> <!-- random image -->
+            <div class="caption left-align">
+              <h3>Left Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwiA1aClj8PmAhX-ELkGHe1eCoIQjRx6BAgBEAQ&url=https%3A%2F%2Fpxhere.com%2Fpt%2Fphoto%2F1449183&psig=AOvVaw3_7gkVSYUJ0AvWA3mFLN1v&ust=1576893213001792"> <!-- random image -->
+            <div class="caption right-align">
+              <h3>Right Aligned Caption</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+          <li>
+            <img src="https://www.google.com/url?sa=i&source=images&cd=&cad=rja&uact=8&ved=2ahUKEwj-0rOyj8PmAhWXHbkGHaPiDHUQjRx6BAgBEAQ&url=https%3A%2F%2Fpxhere.com%2Fpt%2Fphoto%2F1562057&psig=AOvVaw3_7gkVSYUJ0AvWA3mFLN1v&ust=1576893213001792"> <!-- random image -->
+            <div class="caption center-align">
+              <h3>This is our big Tagline!</h3>
+              <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+            </div>
+          </li>
+        </ul>
+      </div>
+    <!-- fim slider -->
+    <!-- body contens inicio -->
+    <!-- habilitação da responsividade, centralização -->
+      <div class="row container">
+        <!-- col = colunas quee ira ocupar, s=smartphones 12=100%, m=tables 6=50%, l= dektops-->
+        <section class="col s12 m6 l12 xl12">
+            <!-- suavisar texto -->
+              <h3 class="light center">LOREM IPSUM</h3>
+              <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias fuga expedita hic obcaecati dolorum, voluptates, mollitia amet doloribus dolor ratione harum reiciendis unde? Debitis provident officiis sequi temporibus animi!</p>
+          <!-- tamanho do article -->
+          <article class="col s12 l12 xl4"> 
+                    <div class="card">
+                      <div class="card-image">
+                        <img src="img/img.jpg">
+                        <span class="card-title">Card Title</span>
+                      </div>
+                      <div class="card-content">
+                        <p>I am a very simple card. I am good at containing small bits of information.
+                        I am convenient because I require little markup to use effectively.</p>
+                      </div>
+                      <div class="card-action">
+                        <a href="#">This is a link</a>
+                      </div>
+                    </div>   
+          </article>
+          <article class="col s12 l12 xl4"> 
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/img.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>   
+          </article>
+          <article class="col s12 l12 xl4"> 
+              <div class="card">
+                <div class="card-image">
+                  <img src="img/img.jpg">
+                  <span class="card-title">Card Title</span>
+                </div>
+                <div class="card-content">
+                  <p>I am a very simple card. I am good at containing small bits of information.
+                  I am convenient because I require little markup to use effectively.</p>
+                </div>
+                <div class="card-action">
+                  <a href="#">This is a link</a>
+                </div>
+              </div>   
+          </article>
+        </section>
+      </div>
+      <div class="container">
+        <h3 class="light center">LOREM IPSUM</h3>
+        <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias fuga expedita hic obcaecati dolorum, voluptates, mollitia amet doloribus dolor ratione harum reiciendis unde? Debitis provident officiis sequi temporibus animi!</p>  
+      </div>
+      <div class="slider">
+          <ul class="slides">
+            <li>
+              <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+              <div class="caption center-align">
+                <h3>This is our big Tagline!</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+            <li>
+              <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+              <div class="caption left-align">
+                <h3>Left Aligned Caption</h3>
+                <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+
+
+      <div class="row container">
+        <!-- col = colunas quee ira ocupar, s=smartphones 12=100%, m=tables 6=50%, l= dektops-->
+        <section class="col s12 m6 l12 xl12">
+            <!-- suavisar texto -->
+              <h3 class="light center">LOREM IPSUM</h3>
+              <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem alias fuga expedita hic obcaecati dolorum, voluptates, mollitia amet doloribus dolor ratione harum reiciendis unde? Debitis provident officiis sequi temporibus animi!</p>
+          <!-- tamanho do article -->
+          <article class="col s12 l12 xl6"> 
+              <div class="card">
+                  <div class="card-image">
+                    <img src="img/img1.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                  </div>    
+          </article>
+          <article class="col s12 l12 xl6"> 
+              <div class="card">
+                  <div class="card-image">
+                    <img src="img/img1.jpg">
+                    <span class="card-title">Card Title</span>
+                    <a class="btn-floating halfway-fab waves-effect waves-light red"><i class="material-icons">add</i></a>
+                  </div>
+                  <div class="card-content">
+                    <p>I am a very simple card. I am good at containing small bits of information. I am convenient because I require little markup to use effectively.</p>
+                  </div>    
+          </article>
+          
+        </section>
+      </div>
+    <!-- body contens fim -->
+    <!-- inicio footer -->
+    <!-- estrutura tirada da documentação components/footer -->
+    <footer class="page-footer grey darken-2">
+        <div class="container ">
+          <!-- habilitação pora o conteudo pegar deterinadas colunas descrita abaixo -->
+          <div class="row">
+            <!-- parte de controle de visibilidade desktop e mobile -->
+            <div class="col l6 s12">
+              <h5 class="white-text">Footer Content</h5>
+              <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Links</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
+                <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright grey darken-3">
+          <div class="container">
+          © 2019 Copyright projeto com fins academicos
+          <a class="grey-text text-lighten-4 right" href="#!">Icones/saiba mais</a>
+          </div>
+        </div>
+      </footer>
+    <!-- fim footer -->
+    <!-- tome cuidado com as versões desse frame -->
+    <!-- link materialize cdn, tirado do proprio site https://materializecss.com/getting-started.html-->
+   <!-- Jquery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <!-- Materialize JS -->
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+   <script> 
+    $(document).ready(function(){
+      // botao
+    $('.sidenav').sidenav();
+    // slider
+    $('.slider').slider();
+  });
+   </script> 
+  </body>
+</html>
